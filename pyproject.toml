@@ -17,6 +17,12 @@ dependencies = [
 ]
 
 [tool.poetry]
+name = "nerd-book-store"
+version = "0.1.0"
+description = "Nerd Book Store API"
+authors = [
+    {name = "AndreDG88",email = "andre.soares.designer@gmail.com"}
+]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"

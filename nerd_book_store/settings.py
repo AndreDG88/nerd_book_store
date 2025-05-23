@@ -22,11 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-1knymr-*g38fd1!aplc+2(c=p0#1bhq2i*xqp2i*jwgoit8+a5"
+#m8x(565@!bf1st32+8a=rm0b2e9&1(hc3tp2p5z5s8)#3h@$=f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ebac-bookstore-api.herokuapp.com']
 
 
 # Application definition
@@ -65,6 +66,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "nerd_book_store.urls"
@@ -85,6 +87,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "nerd_book_store.wsgi.application"
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Database

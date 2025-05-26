@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+#página de configuração de settings
 import os
 from pathlib import Path
 
@@ -26,9 +27,6 @@ SECRET_KEY = "django-insecure-1knymr-*g38fd1!aplc+2(c=p0#1bhq2i*xqp2i*jwgoit8+a5
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ebac-bookstore-api.herokuapp.com']
-
 
 # Application definition
 
